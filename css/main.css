@@ -1,0 +1,269 @@
+/*===============Propiedades Globales================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+
+/*=========================MEDIA QUERIES PANTALLA ANCHA================================*/
+
+@media (max-width:1200px) {
+
+    #intro,
+    #equipo {
+        width: 90% !important;
+        margin: auto;
+    }
+
+    #local {
+        flex-wrap: wrap;
+        padding-top: 30px;
+    }
+
+    .wrapper-local {
+        width: 90%;
+        margin: auto;
+        padding-top: 50px;
+    }
+
+}
+
+/*=========================MEDIA QUERIES PANTALLA SM================================*/
+
+
+@media (max-width:768px) {
+
+    #intro,
+    #equipo {
+        width: 90% !important;
+        margin: auto;
+    }
+
+
+    #img-equipo {
+        max-height: 20rem !important;
+        width: 90%;
+    }
+
+    .wrapper-local {
+        width: 90%;
+        margin: auto;
+        padding-top: 50px;
+    }
+
+    #local {
+        flex-wrap: wrap;
+    }
+
+    .mapa img {
+        width: 100%;
+        height: auto;
+    }
+
+    #bg-contactos {
+        top: -120px;
+    }
+
+
+}
+
+/*=========================MEDIA QUERIES PANTALLA EXTRA-SM================================*/
+
+@media (max-width: 576px) {
+    #servicios-fila-2 {
+        width: 100% !important;
+    }
+
+    #servicios-fila-1 {
+        width: 100% !important;
+    }
+
+    .icono-wrap {
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        text-align: center;
+    }
+}
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+/*===================NAVBAR==========================*/
+
+
+/* Cambia el tamaño de la imagen del ícono */
+.icono-img {
+    width: 120px;
+    /* Ajusta el ancho según tus necesidades */
+    height: 50px;
+    /* Ajusta la altura según tus necesidades */
+    border-radius: 5px;
+
+}
+
+.navbar {
+    background-color: #000000;
+    /* Superposición  position: absolute;*/
+    width: 100%;
+    z-index: 1;
+    /* Se muestra por encima del carrusel */
+    height: 80px;
+    /* Ajusta la altura según tus necesidades */
+}
+
+.navbar .navbar-nav {
+    margin-left: auto;
+    /* Coloca los elementos en el lado derecho */
+}
+
+
+
+/* Cambiar el tamaño del texto en la barra de navegación */
+.navbar-nav .nav-link {
+    font-size: 25px;
+    /* Ajusta el tamaño según tus necesidades */
+}
+
+/* Opcional: Estilo para el botón del menú hamburguesa en dispositivos pequeños */
+.navbar-toggler {
+    background-color: #050202;
+    /* Cambia el color del botón */
+    border: 1px solid #f4f1f1;
+    /* Cambia el borde del botón */
+}
+
+.navbar-toggler-icon {
+    background-color: blue;
+}
+
+/*===================BARRA DE NAVEGACION SECCIONES==========================*/
+.container-principal {
+    padding-top: 100px;
+    /* Ajusta el valor según tus necesidades para dar espacio suficiente */
+}
+
+.imagen-banner {
+    width: 100%;
+    /* Ajusta el ancho de la imagen según tus necesidades */
+    max-height: 300px;
+    /* Ajusta la altura máxima de la imagen según tus necesidades */
+}
+
+
+/*===================MENU==========================*/
+
+#menu a,
+button {
+    font-size: 18px !important;
+    font-weight: 600;
+}
+
+#menu a {
+    color: #f9f5f5;
+
+}
+
+/*===================INICIO==========================*/
+#hero {
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    /* Utiliza flexbox para centrar los elementos hijos */
+    justify-content: center;
+    /* Centra horizontalmente */
+    align-items: center;
+    /* Centra verticalmente */
+}
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    /* Asegura que el video esté detrás del texto */
+}
+
+.promo {
+    display: flex;
+    justify-content: center;
+    /* Centra horizontalmente */
+    align-items: center;
+    /* Centra verticalmente */
+    position: relative;
+    z-index: 2;
+    /* Asegura que el texto esté encima del video */
+    width: 100%;
+    /* Toma el ancho completo */
+    height: 100%;
+    /* Toma la altura completa */
+    transform: translateY(calc(-50% - 60px));
+    /* Ajusta los 20px para mover el texto hacia arriba como desees */
+}
+
+#text {
+    color: #0a0a0a;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    /* Añade sombra */
+    width: 100%;
+    /* Toma el ancho completo */
+}
+
+/*===================GENERAL==========================*/
+
+
+.paytone-one-regular {
+    font-family: "Paytone One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+body {
+    background-color: #000;
+    color: #fff;
+    
+    /* Color de texto blanco */
+
+}
+
+/*===================CARRUSEL==========================*/
+.carousel-item img {
+    margin: 0 auto; /* Alinea la imagen horizontalmente en el centro */
+}
+
+/*===================TARJETAS==========================*/
+.tarjeta-grande {
+    flex: 0 0 66.666667%;
+    /* Ocupa 2/3 del espacio disponible */
+    color: rgb(8, 8, 8);
+    
+}
+
+.tarjeta-pequena {
+    flex: 0 0 33.333333%;
+    /* Ocupa 1/3 del espacio disponible */
+    color: rgb(8, 8, 8);
+    
+}
+.card {
+    height: auto; /* Altura automática */
+    background-size: cover; /* Tamaño de la imagen de fondo */
+    background-position: center; /* Posición de la imagen de fondo */
+}
+/*===================EMPRESAS==========================*/
+.icono-empresa {
+  padding: 15px; /* Espaciado igual en todas direcciones */
+  display: flex;
+  justify-content: center; /* Centra los iconos horizontalmente */
+  align-items: center; /* Centra los iconos verticalmente */
+}
+img {
+  max-width: 45%; /* Asegura que la imagen no exceda el contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+}
